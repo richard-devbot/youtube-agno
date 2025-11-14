@@ -1,0 +1,93 @@
+# Personal Agents Research Team Dependencies
+
+# # Core Agno framework (editable install from parent directory)
+# -e ../agno
+
+# # AG-UI protocol for frontend integration
+# ag-ui-protocol
+
+# Web server
+fastapi
+uvicorn[standard]
+
+# Google Gemini model
+google-generativeai
+
+# Environment variables
+python-dotenv
+
+# Database (SQLite - included in agno)
+
+# Tools (install as needed based on availability)
+youtube-transcript-api  # For YouTubeTools
+newspaper4k             # For Newspaper4kTools
+arxiv                   # For ArxivTools
+duckduckgo-search       # For DuckDuckGoTools
+googlesearch-python     # For GoogleSearchTools
+
+# Optional: Additional tools for enhanced functionality
+pydantic
+asyncio
+
+# Production enhancements
+tenacity                # For retries and backoff
+python-jose[cryptography]  # For JWT auth
+slowapi                 # For rate limiting
+structlog               # For structured logging
+passlib[bcrypt]         # For password hashing (if needed for auth)
+
+# Testing
+pytest                  # For unit tests
+pytest-mock             # For mocking in tests
+
+pypdf
+google-genai
+pymongo
+pycountry
+ddgs
+newspaper4k 
+lxml_html_clean
+
+# 1. Check if the Container is Running
+# First, check the status of your container to see if it's already running:
+# code
+# Bash
+# docker ps
+# If you see local-mongo listed with a status like Up ..., it's running, and you can skip to the connection command.
+# If it's not listed, it means it was stopped (or removed).
+# 2. Start the Existing Container
+# If the container is stopped, use the start command to resume it:
+# code
+# Bash
+# docker start local-mongo
+# 3. Connect to MongoDB Shell (Reuse Connection)
+# Once you confirm it's running (or after running docker start), you can connect to the MongoDB shell inside the running container using the exec command you used before. Make sure you are running this in your regular command prompt/terminal, not inside the MongoDB shell itself.
+# code
+# Bash
+# docker exec -it local-mongo mongosh
+# Important Note on Credentials:
+# When you connect using the command above, you will likely be prompted for authentication because you set the root user/password when you first created it:
+# Username: mongoadmin
+# Password: secret
+# Summary of Commands for Reusing:
+# Start the container:
+# code
+# Bash
+# docker start local-mongo
+# Connect to the shell (optional, for testing/admin):
+# code
+# Bash
+# docker exec -it local-mongo mongosh
+# Your data will be preserved because you mapped no volumes, meaning the data is stored in the container's writable layer, which persists until you explicitly remove the container with docker rm.
+
+
+
+# use admin
+# db.auth("mongoadmin", "secret")
+# show dbs
+# use agno
+# show collections
+# db.agno_sessions.drop()
+
+
+https://medium.com/@honeyricky1m3/intel-panther-lake-the-surprising-leap-for-developers-ai-enthusiasts-b36e1ebd62e2
