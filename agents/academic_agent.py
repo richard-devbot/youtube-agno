@@ -25,7 +25,7 @@ def create_academic_agent():
         role="Expert at finding and analyzing academic research papers",
         model = Gemini(
             id="gemini-2.0-flash",
-            api_key="AIzaSyBfL4hHioC3-s96PCJf-IN5nxfn1fGZoGw",
+            api_key="AIzaSyBfL4hHio",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
