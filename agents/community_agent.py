@@ -25,7 +25,7 @@ def create_community_agent():
         role="Expert at finding relevant discussions and community insights",
         model = Gemini(
             id="gemini-2.0-flash",
-            api_key="AIzaSyBfL4hHioC3-s96PCJf-IN5nxfn1fGZoGw",
+            api_key="AIzaSyBfL4hHioC3-s9",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
