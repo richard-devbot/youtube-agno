@@ -26,7 +26,7 @@ def create_verification_agent():
         role="Expert at fact-checking and real-time information verification",
         model = Gemini(
               id="gemini-2.5-flash",
-              api_key="AIzaSyAVn9ugnmFTzqxLI-AaxzeT1maLGg5X6Tk",
+              api_key="AIzaSyAVn9u",
               search=False,  # Disable built-in search to prevent hallucinations  
           ),
         db=db,
