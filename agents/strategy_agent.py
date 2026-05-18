@@ -28,7 +28,7 @@ def create_strategy_agent():
         role="Expert at creating comprehensive research strategies and keyword plans",
         model = Gemini(
             id="gemini-2.5-pro",
-            api_key="AIzaSyBfL4hHioC3-s96PCJf-IN5nxfn1fGZoGw",
+            api_key="AIzaSyBfL4hH",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
