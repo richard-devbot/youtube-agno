@@ -27,7 +27,7 @@ def create_synthesis_agent():
         role="Expert at synthesizing and coordinating multi-source research findings",
         model = Gemini(
             id="gemini-2.5-flash",
-            api_key="AIzaSyAVn9ugnmFTzqxLI-AaxzeT1maLGg5X6Tk",
+            api_key="AIzaSyAVn9ugn",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
