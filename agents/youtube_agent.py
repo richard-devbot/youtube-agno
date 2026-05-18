@@ -25,7 +25,7 @@ def create_youtube_agent():
         role="A specialist bot for extracting and structuring YouTube data into a Pydantic schema.",
         model = Gemini(
             id="gemini-2.5-pro",
-            api_key="AIzaSyD4c8T4x7YstToozRfvzStH4BvwRdygKhY",
+            api_key="AIzaSyD4c8",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
