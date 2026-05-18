@@ -26,7 +26,7 @@ def create_news_agent():
         role="Expert at finding current news coverage and journalistic analysis",
         model = Gemini(
             id="gemini-2.0-flash",
-            api_key="AIzaSyA6PBmqWvJeYA8j3a3rUs14Y_eT64mCh7Y",
+            api_key="AIzaSyA",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
