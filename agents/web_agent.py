@@ -27,7 +27,7 @@ def create_web_agent():
         role="Expert at comprehensive web research using multiple search engines",
         model = Gemini(
             id="gemini-flash-latest",
-            api_key="AIzaSyD4c8T4x7YstToozRfvzStH4BvwRdygKhY",
+            api_key="AIzaSyD4c8T4x7YstTo",
             search=False,  # Disable built-in search to prevent hallucinations  
         ),
         db=db,
